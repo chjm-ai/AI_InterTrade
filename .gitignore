@@ -20,3 +20,9 @@ tmp/
 dist/
 build/
 
+# Test results (large JSON/video files)
+demos/*/results/*.json
+demos/*/results/*.mp4
+demos/*/results/*.jpg
+demos/*/results/*.png
+
