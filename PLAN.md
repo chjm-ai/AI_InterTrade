@@ -10,7 +10,7 @@
 | 能力 | 状态 | 下一步 |
 |------|------|--------|
 | 询盘承接 | 📝 待执行 | Chatwoot + WhatsApp demo |
-| 爆款拆解 | 🟡 部分验证 | 补 Apify Twitter 实跑样例，生成分析报告样例 |
+| 爆款拆解 | 🟡 部分验证 | 整理 XPOZ 四平台统一字段表，生成分析报告样例 |
 | 多平台发布 | ✅ 代码调研完成 | 需决策：使用托管版或 Fork |
 | 评论截流 | ⏸️ 暂缓 | 风险过高 |
 
@@ -23,6 +23,7 @@
 - ✅ Apify TikTok 抓取测试（已验证可行）
 - ✅ Apify vs XPOZ 功能差异与官方定价对比
 - ✅ XPOZ Twitter/X 查询测试（已拿到 10 条结果）
+- ✅ XPOZ 四平台查询测试（Twitter/X、Instagram、TikTok、Reddit）
 - ✅ Postiz 代码深度调研（AI能力、API架构、外贸适配度评估）
 
 ---

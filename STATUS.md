@@ -9,6 +9,10 @@
 | 2026-03-18 | 爆款内容拆解 | ✅ 已更新 | 已补充 `Apify vs XPOZ` 功能差异与成本差异 |
 | 2026-03-18 | 爆款内容拆解 | ✅ 已验证 | `Apify` TikTok 抓取链路已跑通 |
 | 2026-03-18 | 爆款内容拆解 | ✅ 已验证 | `XPOZ` Twitter/X 查询链路已跑通，已拿到 10 条结果样本 |
+| 2026-03-18 | 爆款内容拆解 | ✅ 已验证 | `XPOZ` Instagram 查询链路已跑通，已拿到 10 条结果样本 |
+| 2026-03-18 | 爆款内容拆解 | ✅ 已验证 | `XPOZ` TikTok 查询链路已跑通，已拿到 10 条结果样本 |
+| 2026-03-18 | 爆款内容拆解 | ✅ 已验证 | `XPOZ` Reddit 查询链路已跑通，已拿到 10 条结果样本 |
+| 2026-03-18 | 爆款内容拆解 | ✅ 已验证 | `Apify Instagram` 当前 actor 更偏 hashtag 抓取，本轮两次查询都卡在 tags/search 500 重试 |
 
 ## 本轮结论
 
@@ -17,9 +21,12 @@
 - 轻量月用量下，`XPOZ Pro $20/月` 低于 `Apify Starter $29/月`
 - 中高频月用量下，`XPOZ Max $200/月` 与 `Apify Scale $199/月` 接近，但计费模型不同
 - `XPOZ` 的 Twitter/X 实测返回更适合快速阅读，`Apify` 更适合结构化落库
+- `XPOZ` 的 Twitter/X 与 Instagram 接口风格一致，跨平台统一性优于 `Apify`
+- `XPOZ` 当前公开的 4 个内容平台已全部实测可用：Twitter/X、Instagram、TikTok、Reddit
+- `Apify` 跨平台不只是字段不一致，连“搜索入口语义”也可能不同
 
 ## 下一步
 
-- 补 `Apify Twitter` 同关键词实跑样本
-- 对比 `TikTok / Instagram` 两个平台的字段完整性
+- 统一整理 `XPOZ` 四平台标准字段映射
+- 按外贸场景拆分：爆款监控 / 需求洞察 / 竞品内容
 - 再决定最终 MVP 采用 `Apify 抓取层` 还是 `XPOZ 情报层`
