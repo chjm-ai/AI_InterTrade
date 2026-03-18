@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Env
+.env
+.env.*
+
+# Dependency caches
+node_modules/
+
+# Local artifacts
+tmp/
+dist/
+build/
+
