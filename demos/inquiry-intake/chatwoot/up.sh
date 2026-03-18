@@ -3,6 +3,9 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
+export NO_PROXY="${NO_PROXY:-127.0.0.1,localhost}"
+export no_proxy="${no_proxy:-127.0.0.1,localhost}"
+
 if ! command -v docker >/dev/null 2>&1; then
   echo "docker is not installed or not in PATH"
   exit 1
@@ -35,4 +38,4 @@ echo "starting containers..."
 echo "preparing database..."
 "${compose_cmd[@]}" -f docker-compose.local.yml run --rm rails bundle exec rails db:chatwoot_prepare
 
-echo "Chatwoot should be available at http://localhost:3000"
+echo "Chatwoot should be available at http://127.0.0.1:3000"

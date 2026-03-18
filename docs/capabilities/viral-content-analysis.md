@@ -14,14 +14,16 @@
 
 **优点：**
 - 现成 Actor 生态（TikTok、Instagram、YouTube Shorts、LinkedIn 等）
+- 覆盖面广，适合多平台抓取与后续自定义分析
 - 支持代理池和反爬绕过
 - 数据格式标准化（JSON/CSV/API）
 - 可视化调试和监控
 - Serverless，无需自建服务器
 
 **成本估算：**
-- 基础版：$49/月（含 $49 计算积分）
-- TikTok scraper：约 $0.5-2/1000 视频
+- Starter：$29/月（含 $29 usage credit，$0.3/CU）
+- Scale：$199/月（含 $199 usage credit，$0.25/CU）
+- TikTok scraper：当前已验证样本约 $0.01 / 10 条视频
 - 按量付费，无固定服务器成本
 
 **技术验证点：**
@@ -29,7 +31,32 @@
 - 评论区数据深度（嵌套评论）
 - 数据更新频率限制
 
-### 方案二：自建爬虫 + LLM 分析
+### 方案二：XPOZ（社媒情报型方案）
+
+**优点：**
+- 更偏“社媒搜索 + 情报分析”，不是通用爬虫平台
+- 内置 MCP 工作流，适合直接给 AI agent 调用
+- 支持跨平台搜索、情绪分析、趋势检测、影响力评分
+- 适合品牌监控、竞品洞察、找买家线索、找达人
+
+**限制：**
+- 官网公开重点是 Twitter/X、Instagram、Reddit、TikTok 的社媒搜索与分析
+- 更像“现成社媒数据库 + 检索分析层”，不是任意网页抓取
+- 按 credits 计费，不适合把它当原始大规模下载器
+
+**成本估算：**
+- Free：$0，一次性 5,000 credits，1 个持续跟踪关键词/用户
+- Pro：$20/月，30,000 credits，超量 $0.80 / 1K credits，10 个跟踪词/用户
+- Max：$200/月，600,000 credits，超量 $0.40 / 1K credits，30 个跟踪词/用户
+- 计费公式：`credits = queries × 5 + results × 0.005`
+- 例如：100 次查询 + 100,000 条结果 = 1,000 credits
+
+**技术验证点：**
+- TikTok / Instagram 结果字段是否满足爆款拆解
+- 查询型结果能否稳定拿到视频文案、互动、作者、时间等核心字段
+- 批量导出与后续报表加工是否顺手
+
+### 方案三：自建爬虫 + LLM 分析
 
 **技术栈：**
 - 爬虫：Playwright / Scrapy + 代理池
@@ -47,6 +74,42 @@
 - LLM API：$20-50/月（按量）
 - 合计：$90-300/月 + 开发维护人力
 
+## Apify vs XPOZ 结论
+
+### 已验证
+
+| 维度 | Apify | XPOZ |
+|------|------|------|
+| 产品定位 | 通用抓取平台 | 社媒情报/搜索平台 |
+| 主要形态 | Actor + Dataset + API | MCP + Social Search + 分析工具 |
+| 覆盖范围 | 社媒、电商、地图、搜索、任意网页 | 以 Twitter/X、Instagram、Reddit、TikTok 为主 |
+| 适合任务 | 原始数据抓取、批量落库、可自定义流程 | 品牌监控、竞品洞察、趋势分析、达人/线索发现 |
+| 原始控制力 | 高 | 中 |
+| 开箱分析能力 | 中，需自己做分析层 | 高，直接带 sentiment / trend / influence 等能力 |
+
+### 成本差异
+
+| 场景 | Apify | XPOZ |
+|------|------|------|
+| 低成本试跑 | Free $0，含 $5 credit | Free $0，一次性 5,000 credits |
+| 月度轻量使用 | Starter $29/月 | Pro $20/月 |
+| 月度中高频使用 | Scale $199/月 | Max $200/月 |
+| 计费方式 | 平台 credit/CU + 部分 Actor 单独计费 | credits，按查询数和结果数计费 |
+| 成本可预测性 | 中，取决于 Actor 和 CU 消耗 | 高，公式清晰 |
+
+### 选择建议
+
+- **要抓原始数据、做结构化沉淀、后面自己算爆款模型**：优先 `Apify`
+- **要快速出竞品洞察、品牌监控、趋势/情绪/达人分析**：优先 `XPOZ`
+- **要做外贸爆款内容拆解 MVP**：短期可用 `Apify 抓取 + 自己分析`
+- **如果你已经跑通 XPOZ**：它更适合做“老板可直接看懂”的情报层，不适合替代所有抓取层
+
+### 风险假设
+
+- `XPOZ` 官网未公开逐平台字段样例，字段深度仍需用你的实测结果补充
+- `Apify` 的成本更依赖具体 Actor 与 CU 消耗，不同平台差异会明显
+- 两者都依赖第三方平台数据可用性，稳定性需按平台单独验证
+
 ## 平台选择建议（外贸场景）
 
 优先级排序：
@@ -58,7 +121,7 @@
 
 ## 要重点验证的点
 
-- [ ] 抓取价格（Apify vs 自建成本对比）
+- [x] 抓取价格（Apify vs XPOZ 官方定价对比）
 - [ ] 抓取成功率与稳定性（不同平台差异）
 - [ ] 返回数据格式是否适合做结构化分析
 - [ ] 关键字段完整性（点赞、评论、分享、标签、音乐）
@@ -207,4 +270,7 @@
 
 - [Apify TikTok Scraper](https://apify.com/apify/tiktok-scraper)
 - [Apify Instagram Scraper](https://apify.com/apify/instagram-scraper)
+- [Apify Pricing](https://apify.com/pricing)
+- [XPOZ Pricing](https://www.xpoz.ai/pricing/)
+- [XPOZ Apps](https://www.xpoz.ai/apps/)
 - [LLM Prompts for Content Analysis](待补充)

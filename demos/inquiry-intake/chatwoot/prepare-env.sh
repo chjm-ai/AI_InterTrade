@@ -14,7 +14,7 @@ redis_password="$(openssl rand -hex 24)"
 
 cat > .env <<EOF
 SECRET_KEY_BASE=${secret_key_base}
-FRONTEND_URL=http://localhost:3000
+FRONTEND_URL=http://127.0.0.1:3000
 FORCE_SSL=false
 ENABLE_ACCOUNT_SIGNUP=false
 
@@ -40,6 +40,9 @@ SMTP_OPENSSL_VERIFY_MODE=peer
 ACTIVE_STORAGE_SERVICE=local
 RAILS_LOG_TO_STDOUT=true
 LOG_LEVEL=info
+
+NO_PROXY=127.0.0.1,localhost
+no_proxy=127.0.0.1,localhost
 EOF
 
 echo ".env generated at $(pwd)/.env"

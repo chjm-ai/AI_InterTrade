@@ -37,14 +37,14 @@ cd /Users/wesley/Desktop/Repos/AI_InterTrade/demos/inquiry-intake/chatwoot
 首次初始化完成后，访问：
 
 ```text
-http://localhost:3000
+http://127.0.0.1:3000
 ```
 
 ## 默认本地配置
 
 | 项目 | 值 |
 | --- | --- |
-| URL | `http://localhost:3000` |
+| URL | `http://127.0.0.1:3000` |
 | Rails 环境 | `production` |
 | 注册开关 | `false` |
 | 存储 | `local` |

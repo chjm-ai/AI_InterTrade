@@ -1,0 +1,192 @@
+{
+  "test_time": "2026-03-18T16:55:50.602783",
+  "total_tests": 1,
+  "reports": [
+    {
+      "keyword": "phone case",
+      "timestamp": "20260318_165550",
+      "total_count": 10,
+      "fields": [
+        {
+          "field": "id",
+          "type": "str"
+        },
+        {
+          "field": "text",
+          "type": "str"
+        },
+        {
+          "field": "textLanguage",
+          "type": "str"
+        },
+        {
+          "field": "createTime",
+          "type": "int"
+        },
+        {
+          "field": "createTimeISO",
+          "type": "str"
+        },
+        {
+          "field": "isAd",
+          "type": "bool"
+        },
+        {
+          "field": "authorMeta",
+          "type": "dict"
+        },
+        {
+          "field": "musicMeta",
+          "type": "dict"
+        },
+        {
+          "field": "webVideoUrl",
+          "type": "str"
+        },
+        {
+          "field": "videoMeta",
+          "type": "dict"
+        },
+        {
+          "field": "diggCount",
+          "type": "int"
+        },
+        {
+          "field": "shareCount",
+          "type": "int"
+        },
+        {
+          "field": "playCount",
+          "type": "int"
+        },
+        {
+          "field": "collectCount",
+          "type": "int"
+        },
+        {
+          "field": "commentCount",
+          "type": "int"
+        },
+        {
+          "field": "repostCount",
+          "type": "int"
+        },
+        {
+          "field": "mentions",
+          "type": "list"
+        },
+        {
+          "field": "detailedMentions",
+          "type": "list"
+        },
+        {
+          "field": "hashtags",
+          "type": "list"
+        },
+        {
+          "field": "effectStickers",
+          "type": "list"
+        },
+        {
+          "field": "isSlideshow",
+          "type": "bool"
+        },
+        {
+          "field": "isPinned",
+          "type": "bool"
+        },
+        {
+          "field": "mediaUrls",
+          "type": "list"
+        },
+        {
+          "field": "searchQuery",
+          "type": "str"
+        },
+        {
+          "field": "commentsDatasetUrl",
+          "type": "NoneType"
+        }
+      ],
+      "sample": {
+        "id": "7611697361722625298",
+        "text": "High-quality Samsung S26 Ultra users shouldn't miss this Dropproof phone case, slim and lightweight #test #samsungs26ultra #samsung ",
+        "textLanguage": "en",
+        "createTime": 1772236406,
+        "createTimeISO": "2026-02-27T23:53:26.000Z",
+        "isAd": true,
+        "authorMeta": {
+          "id": "7506399658601825288",
+          "name": "trainamhung",
+          "profileUrl": "https://www.tiktok.com/@trainamhung",
+          "nickName": "ʕ˖͜͡˖ʔ ＴＲＡＩ ＮＡＭ ＨùＮＧ 亗",
+          "verified": false,
+          "signature": "✌️✌️✌️\n🇻🇳Tự Hào Đất Nước Việt Nam🇻🇳\n  ❤Yêu Quê Hương Cam Lộ❤\n👍Review IPhone & Ophone👍",
+          "avatar": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/b1b31e8c4e5c07a9e7bd0ee5d2ecac63~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=b121413d&x-expires=1773993600&x-signature=eHF%2FZyCFVt%2B2PvZvQp4eiPQCJQw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+          "privateAccount": false,
+          "following": 4,
+          "friends": 0,
+          "fans": 97800,
+          "heart": 3900000,
+          "video": 3350,
+          "digg": 182,
+          "originalAvatarUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/b1b31e8c4e5c07a9e7bd0ee5d2ecac63~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=b121413d&x-expires=1773993600&x-signature=eHF%2FZyCFVt%2B2PvZvQp4eiPQCJQw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8"
+        },
+        "musicMeta": {
+          "musicName": "âm thanh gốc - ʕ˖͜͡˖ʔ ＴＲＡＩ ＮＡＭ ＨùＮＧ 亗",
+          "musicAuthor": "ʕ˖͜͡˖ʔ ＴＲＡＩ ＮＡＭ ＨùＮＧ 亗",
+          "musicOriginal": true,
+          "playUrl": "https://v16-webapp-prime.us.tiktok.com/video/tos/alisg/tos-alisg-v-27dcd7/oELzPAfTRECqDKxAIQ9FFTXCgEEeIjQAo3eAIG/?a=1988&bti=ODszNWYuMDE6&ch=0&cr=0&dr=0&er=0&lr=default&cd=0%7C0%7C0%7C0&br=250&bt=125&ds=5&ft=GcAInInz7Th-obTPXq8Zmo&mime_type=audio_mpeg&qs=13&rc=ajVqeW45cng1OTMzODU8NEBpajVqeW45cng1OTMzODU8NEBraW4zMmQ0cGVhLS1kMS1zYSNraW4zMmQ0cGVhLS1kMS1zcw%3D%3D&btag=e00078000&expire=1773845761&l=2026031808554413FD6E6E6264A403B0BF&ply_type=3&policy=3&signature=6de720fbdfe6519ce99dd1be7d32dcc0&tk=0",
+          "coverMediumUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/b1b31e8c4e5c07a9e7bd0ee5d2ecac63~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=b121413d&x-expires=1773993600&x-signature=eHF%2FZyCFVt%2B2PvZvQp4eiPQCJQw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8",
+          "musicId": "7611697406878468881",
+          "originalCoverMediumUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/b1b31e8c4e5c07a9e7bd0ee5d2ecac63~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9640&refresh_token=b121413d&x-expires=1773993600&x-signature=eHF%2FZyCFVt%2B2PvZvQp4eiPQCJQw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=useast8"
+        },
+        "webVideoUrl": "https://www.tiktok.com/@trainamhung/video/7611697361722625298",
+        "videoMeta": {
+          "height": 1024,
+          "width": 576,
+          "duration": 16,
+          "coverUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAPcXFExDQtPiE5yAEFG4zjeLCfeTKDQE4AcIR~tplv-tiktokx-origin.image?dr=9636&x-expires=1773993600&x-signature=vKXm4nL8TLiveu6BJ4GHnmVaUAM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8",
+          "definition": "540p",
+          "format": "mp4",
+          "transcriptionLink": null,
+          "originalCoverUrl": "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oAPcXFExDQtPiE5yAEFG4zjeLCfeTKDQE4AcIR~tplv-tiktokx-origin.image?dr=9636&x-expires=1773993600&x-signature=vKXm4nL8TLiveu6BJ4GHnmVaUAM%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=useast8"
+        },
+        "diggCount": 821,
+        "shareCount": 210,
+        "playCount": 99800,
+        "collectCount": 256,
+        "commentCount": 28,
+        "repostCount": 0,
+        "mentions": [],
+        "detailedMentions": [],
+        "hashtags": [
+          {
+            "id": "15134",
+            "name": "test",
+            "title": "",
+            "cover": ""
+          },
+          {
+            "id": "7062468597313961989",
+            "name": "samsungs26ultra",
+            "title": "",
+            "cover": ""
+          },
+          {
+            "id": "121148",
+            "name": "samsung",
+            "title": "",
+            "cover": "https://p19-common-sign.tiktokcdn-us.com/tiktok-obj/35068a0a8fa8c0137d909b60242e117c.jpeg~tplv-tiktokx-origin.image?dr=9627&x-expires=1773842400&x-signature=MYfVIzFJwCUCbOPPSyTppwi3jeQ%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=9b759fb9&idc=useast8"
+          }
+        ],
+        "effectStickers": [],
+        "isSlideshow": false,
+        "isPinned": false,
+        "mediaUrls": [],
+        "searchQuery": "phone case",
+        "commentsDatasetUrl": null
+      }
+    }
+  ]
+}
